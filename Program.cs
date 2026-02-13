@@ -1,6 +1,6 @@
-﻿using Assignment;
+using Assignment;
 
-List<double> student01Grades = new ()
+List<double> student01Grades = new()
 {
     17, 18, 15
 };
@@ -15,7 +15,7 @@ List<string> student01Teachers = new()
 Student student01 = new(student01Grades)
 {
     FirstName = "AmirHossein",
-    LastName="Bayat",
+    LastName = "Bayat",
     nationalCode = NationalCode.Create("0151416139"),
     StudentCode = StudentCode.Create("04213246678420"),
     Studentcourses = student01Courses,
@@ -119,9 +119,9 @@ List<Student> class01presentstudents = new List<Student>()
     student01, student02
 };
 Random random01 = new();
-int class01year = random01.Next(2000,2027);
-int class01month = random01.Next(1,13);
-int class01day = random01.Next(1,30);
+int class01year = random01.Next(2000, 2027);
+int class01month = random01.Next(1, 13);
+int class01day = random01.Next(1, 29);
 DateOnly class01date = new DateOnly(class01year, class01month, class01day);
 UniversityClass class01 = new(class01grades)
 {
@@ -143,7 +143,7 @@ List<Student> class02presentstudents = new List<Student>()
 Random random02 = new();
 int class02year = random02.Next(2000, 2027);
 int class02month = random02.Next(1, 13);
-int class02day = random02.Next(1, 30);
+int class02day = random02.Next(1, 29);
 DateOnly class02date = new DateOnly(class02year, class02month, class02day);
 UniversityClass class02 = new(class02grades)
 {
@@ -165,7 +165,7 @@ List<Student> class03presentstudents = new List<Student>()
 Random random03 = new();
 int class03year = random02.Next(2000, 2027);
 int class03month = random02.Next(1, 13);
-int class03day = random02.Next(1, 30);
+int class03day = random02.Next(1, 29);
 DateOnly class03date = new DateOnly(class02year, class02month, class02day);
 UniversityClass class03 = new(class03grades)
 {
@@ -184,7 +184,7 @@ if (input?.Length == 14)
     {
         Console.WriteLine(student01);
         Console.WriteLine($"\vcourses :");
-        foreach(var item in student01.Studentcourses)
+        foreach (var item in student01.Studentcourses)
         {
             Console.WriteLine(item);
         }
@@ -194,7 +194,7 @@ if (input?.Length == 14)
             Console.WriteLine(item);
         }
     }
-    else if(input == "04214568233920")
+    else if (input == "04214568233920")
     {
         Console.WriteLine(student02);
         Console.WriteLine($"\vcourses :");
@@ -225,7 +225,7 @@ if (input?.Length == 14)
 }
 else if (input?.Length == 8)
 {
-    if(input == "09856781")
+    if (input == "09856781")
     {
         Console.WriteLine(teacher01);
         Console.WriteLine($"\vcourses :");
@@ -234,7 +234,7 @@ else if (input?.Length == 8)
             Console.WriteLine(item);
         }
     }
-    else if (input == "09823456")
+    else if (input == "09834457")
     {
         Console.WriteLine(teacher02);
         Console.WriteLine($"\vcourses :");
@@ -255,11 +255,11 @@ else if (input?.Length == 8)
 }
 else if (input?.Length == 5)
 {
-    if(input == "27443")
+    if (input == "27443")
     {
         Console.WriteLine(class01);
         Console.WriteLine("\vpresent students :");
-        foreach(var item in class01.presentStudents)
+        foreach (var item in class01.presentStudents)
         {
             Console.WriteLine($"{item.FirstName} {item.LastName}");
         }
@@ -287,4 +287,6 @@ else
 {
     Console.WriteLine("invalid input!");
 }
+
+
 
