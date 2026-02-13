@@ -10,7 +10,6 @@ public class Student : Person
     public required StudentCode StudentCode { get; init; }
     public required List<string>? Studentcourses { get; init; }
     public required List<string>? Teachers { get; init; }
-    public static Course CreateCourse(string description) => new (description);
     public double StudentAverage { get; }
     public Student(List<double> grades)
     {
@@ -30,3 +29,4 @@ public class Student : Person
     public override string ToString() =>
         base.ToString() + $" , st : {StudentCode} , avg : {StudentAverage}";
 }
+
