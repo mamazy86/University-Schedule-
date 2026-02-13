@@ -210,7 +210,7 @@ if (input?.Length == 14)
                 Console.WriteLine(item);
             }
             break;
-        default:
+        case "04267754239820":
             Console.WriteLine(student03);
             Console.WriteLine($"\vcourses :");
             foreach (var item in student03.Studentcourses)
@@ -246,7 +246,7 @@ else if (input?.Length == 8)
                 Console.WriteLine(item);
             }
             break;
-        default:
+        case "09874512": 
             Console.WriteLine(teacher03);
             Console.WriteLine($"\vcourses :");
             foreach (var item in teacher03.Teachercourses)
@@ -277,7 +277,7 @@ else if (input?.Length == 5)
                 Console.WriteLine($"{item.FirstName} {item.LastName}");
             }
             break;
-        default:
+        case "27239":
             Console.WriteLine(class03);
             Console.WriteLine("\vpresent students :");
             foreach (var item in class03.presentStudents)
@@ -291,6 +291,7 @@ else
 {
     Console.WriteLine("invalid input!");
 }
+
 
 
 
