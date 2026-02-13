@@ -178,115 +178,119 @@ UniversityClass class03 = new(class03grades)
 
 Console.WriteLine("enter your code :");
 string? input = Console.ReadLine()?.Trim();
+
 if (input?.Length == 14)
 {
-    if (input == "04213246678420")
+    switch (input)
     {
-        Console.WriteLine(student01);
-        Console.WriteLine($"\vcourses :");
-        foreach (var item in student01.Studentcourses)
-        {
-            Console.WriteLine(item);
-        }
-        Console.WriteLine("\vteachers :");
-        foreach (var item in student01.Teachers)
-        {
-            Console.WriteLine(item);
-        }
-    }
-    else if (input == "04214568233920")
-    {
-        Console.WriteLine(student02);
-        Console.WriteLine($"\vcourses :");
-        foreach (var item in student02.Studentcourses)
-        {
-            Console.WriteLine(item);
-        }
-        Console.WriteLine("\vteachers :");
-        foreach (var item in student02.Teachers)
-        {
-            Console.WriteLine(item);
-        }
-    }
-    else
-    {
-        Console.WriteLine(student03);
-        Console.WriteLine($"\vcourses :");
-        foreach (var item in student03.Studentcourses)
-        {
-            Console.WriteLine(item);
-        }
-        Console.WriteLine("\vteachers :");
-        foreach (var item in student03.Teachers)
-        {
-            Console.WriteLine(item);
-        }
+        case "04213246678420":
+            Console.WriteLine(student01);
+            Console.WriteLine($"\vcourses :");
+            foreach (var item in student01.Studentcourses)
+            {
+                Console.WriteLine(item);
+            }
+            Console.WriteLine("\vteachers :");
+            foreach (var item in student01.Teachers)
+            {
+                Console.WriteLine(item);
+            }
+            break;
+        case "04214568233920":
+            Console.WriteLine(student02);
+            Console.WriteLine($"\vcourses :");
+            foreach (var item in student02.Studentcourses)
+            {
+                Console.WriteLine(item);
+            }
+            Console.WriteLine("\vteachers :");
+            foreach (var item in student02.Teachers)
+            {
+                Console.WriteLine(item);
+            }
+            break;
+        default:
+            Console.WriteLine(student03);
+            Console.WriteLine($"\vcourses :");
+            foreach (var item in student03.Studentcourses)
+            {
+                Console.WriteLine(item);
+            }
+            Console.WriteLine("\vteachers :");
+            foreach (var item in student03.Teachers)
+            {
+                Console.WriteLine(item);
+            }
+            break;
     }
 }
+
 else if (input?.Length == 8)
 {
-    if (input == "09856781")
+    switch (input)
     {
-        Console.WriteLine(teacher01);
-        Console.WriteLine($"\vcourses :");
-        foreach (var item in teacher01.Teachercourses)
-        {
-            Console.WriteLine(item);
-        }
-    }
-    else if (input == "09834457")
-    {
-        Console.WriteLine(teacher02);
-        Console.WriteLine($"\vcourses :");
-        foreach (var item in teacher02.Teachercourses)
-        {
-            Console.WriteLine(item);
-        }
-    }
-    else
-    {
-        Console.WriteLine(teacher03);
-        Console.WriteLine($"\vcourses :");
-        foreach (var item in teacher03.Teachercourses)
-        {
-            Console.WriteLine(item);
-        }
+        case "09856781":
+            Console.WriteLine(teacher01);
+            Console.WriteLine($"\vcourses :");
+            foreach (var item in teacher01.Teachercourses)
+            {
+                Console.WriteLine(item);
+            }
+            break;
+        case "09834457":
+            Console.WriteLine(teacher02);
+            Console.WriteLine($"\vcourses :");
+            foreach (var item in teacher02.Teachercourses)
+            {
+                Console.WriteLine(item);
+            }
+            break;
+        default:
+            Console.WriteLine(teacher03);
+            Console.WriteLine($"\vcourses :");
+            foreach (var item in teacher03.Teachercourses)
+            {
+                Console.WriteLine(item);
+            }
+            break;
     }
 }
+
 else if (input?.Length == 5)
 {
-    if (input == "27443")
+    switch (input)
     {
-        Console.WriteLine(class01);
-        Console.WriteLine("\vpresent students :");
-        foreach (var item in class01.presentStudents)
-        {
-            Console.WriteLine($"{item.FirstName} {item.LastName}");
-        }
-    }
-    else if (input == "27123")
-    {
-        Console.WriteLine(class02);
-        Console.WriteLine("\vpresent students :");
-        foreach (var item in class02.presentStudents)
-        {
-            Console.WriteLine($"{item.FirstName} {item.LastName}");
-        }
-    }
-    else
-    {
-        Console.WriteLine(class03);
-        Console.WriteLine("\vpresent students :");
-        foreach (var item in class03.presentStudents)
-        {
-            Console.WriteLine($"{item.FirstName} {item.LastName}");
-        }
+        case "27443":
+            Console.WriteLine(class01);
+            Console.WriteLine("\vpresent students :");
+            foreach (var item in class01.presentStudents)
+            {
+                Console.WriteLine($"{item.FirstName} {item.LastName}");
+            }
+            break;
+        case "27123":
+            Console.WriteLine(class02);
+            Console.WriteLine("\vpresent students :");
+            foreach (var item in class02.presentStudents)
+            {
+                Console.WriteLine($"{item.FirstName} {item.LastName}");
+            }
+            break;
+        default:
+            Console.WriteLine(class03);
+            Console.WriteLine("\vpresent students :");
+            foreach (var item in class03.presentStudents)
+            {
+                Console.WriteLine($"{item.FirstName} {item.LastName}");
+            }
+            break;
     }
 }
 else
 {
     Console.WriteLine("invalid input!");
 }
+
 
 
 
