@@ -29,13 +29,13 @@ List<double> student02Grades = new()
 };
 List<string> student02Courses = new()
 {
-"Mathematics","Chemistry","Pogramming"
+"Mathematics","Chemistry","Programming"
 };
 List<string> student02Teachers = new()
 {
 "Ali Najarian","MohamadMahdi Saeidi","Ali Hafezi"
 };
-Student student02 = new(student01Grades)
+Student student02 = new(student02Grades)
 {
     FirstName = "Artin",
     LastName = "Khaleghi",
@@ -52,13 +52,13 @@ List<double> student03Grades = new()
 };
 List<string> student03Courses = new()
 {
-"Biology","Chemistry","Pogramming"
+"Biology","Chemistry","Programming"
 };
 List<string> student03Teachers = new()
 {
 "Farhad Nasirloo","MohamadMahdi Saeidi","Ali Hafezi"
 };
-Student student03 = new(student01Grades)
+Student student03 = new(student03Grades)
 {
     FirstName = "MohamadReza",
     LastName = "Panahandeh",
@@ -71,7 +71,7 @@ Student student03 = new(student01Grades)
 
 List<string> teacher01Courses = new()
 {
-"Pogramming"
+"Programming"
 };
 Teacher teacher01 = new()
 {
@@ -91,8 +91,8 @@ Teacher teacher02 = new()
 {
     FirstName = "Farhad",
     LastName = "Nasirloo",
-    nationalCode = NationalCode.Create("0025273441"),
-    TeacherCode = TeacherCode.Create("09823456"),
+    nationalCode = NationalCode.Create("0026473554"),
+    TeacherCode = TeacherCode.Create("09834457"),
     Teachercourses = teacher02Courses,
 };
 
@@ -104,8 +104,8 @@ Teacher teacher03 = new()
 {
     FirstName = "MohamadMahdi",
     LastName = "Saeidi",
-    nationalCode = NationalCode.Create("0025273441"),
-    TeacherCode = TeacherCode.Create("09823456"),
+    nationalCode = NationalCode.Create("0028243310"),
+    TeacherCode = TeacherCode.Create("09874512"),
     Teachercourses = teacher03Courses,
 };
 
@@ -145,7 +145,7 @@ int class02year = random02.Next(2000, 2027);
 int class02month = random02.Next(1, 13);
 int class02day = random02.Next(1, 30);
 DateOnly class02date = new DateOnly(class02year, class02month, class02day);
-UniversityClass class02 = new(class01grades)
+UniversityClass class02 = new(class02grades)
 {
     taughtCourse = UniversityClass.CreateCourse("Mathematics"),
     Time = class02date,
@@ -167,7 +167,7 @@ int class03year = random02.Next(2000, 2027);
 int class03month = random02.Next(1, 13);
 int class03day = random02.Next(1, 30);
 DateOnly class03date = new DateOnly(class02year, class02month, class02day);
-UniversityClass class03 = new(class01grades)
+UniversityClass class03 = new(class03grades)
 {
     taughtCourse = UniversityClass.CreateCourse("Programming"),
     Time = class03date,
@@ -287,3 +287,4 @@ else
 {
     Console.WriteLine("invalid input!");
 }
+
