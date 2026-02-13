@@ -27,6 +27,7 @@ public class Student : Person
         }
     }
     public override string ToString() =>
-        base.ToString() + $" , st : {StudentCode} , avg : {StudentAverage}";
+       base.ToString() + $" , avg : {StudentAverage}";
 }
+
 
