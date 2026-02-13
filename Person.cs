@@ -10,6 +10,7 @@ public abstract class Person
     public string? LastName { get; init; }
     public required NationalCode nationalCode { get; init; }
     public override string ToString() =>
-        $"\vfull name : {FirstName} {LastName} , nt : {nationalCode}";
+        $"\vfull name : {FirstName} {LastName} , national code : {nationalCode}";
 }
+
 
