@@ -119,8 +119,8 @@ List<Student> class01presentstudents = new List<Student>()
     student01, student02
 };
 Random random01 = new();
-int class01year = random01.Next(2000, 2027);
-int class01month = random01.Next(1, 13);
+int class01year = 2025;
+int class01month = 8;
 int class01day = random01.Next(1, 29);
 DateOnly class01date = new DateOnly(class01year, class01month, class01day);
 UniversityClass class01 = new(class01grades)
@@ -141,8 +141,8 @@ List<Student> class02presentstudents = new List<Student>()
     student01, student03
 };
 Random random02 = new();
-int class02year = random02.Next(2000, 2027);
-int class02month = random02.Next(1, 13);
+int class02year = 2025;
+int class02month = 8;
 int class02day = random02.Next(1, 29);
 DateOnly class02date = new DateOnly(class02year, class02month, class02day);
 UniversityClass class02 = new(class02grades)
@@ -163,10 +163,10 @@ List<Student> class03presentstudents = new List<Student>()
     student02, student03
 };
 Random random03 = new();
-int class03year = random02.Next(2000, 2027);
-int class03month = random02.Next(1, 13);
+int class03year = 2025;
+int class03month = 8;
 int class03day = random02.Next(1, 29);
-DateOnly class03date = new DateOnly(class02year, class02month, class02day);
+DateOnly class03date = new DateOnly(class03year, class03month, class03day);
 UniversityClass class03 = new(class03grades)
 {
     taughtCourse = UniversityClass.CreateCourse("Programming"),
@@ -178,6 +178,7 @@ UniversityClass class03 = new(class03grades)
 
 Console.WriteLine("enter your code :");
 string? input = Console.ReadLine()?.Trim();
+
 
 if (input?.Length == 14)
 {
@@ -290,7 +291,6 @@ else
 {
     Console.WriteLine("invalid input!");
 }
-
 
 
 
