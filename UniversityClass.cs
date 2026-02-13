@@ -26,6 +26,7 @@ public class UniversityClass
         }
     }
     public override string ToString() =>
-        $"\vtime : {Time} , class code : {classCode} , present teacher : {presentTeacher.FirstName} {presentTeacher.LastName}" + 
+        $"\vtime : {Time} , present teacher : {presentTeacher.FirstName} {presentTeacher.LastName}" + 
         $"\nclass avg : {ClassAverage} , taught course : {taughtCourse}";
 }
+
